@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter';
+        }
+
+        .bar {
+            /* position: fixed;s */
+            /* height: 50px; */
+            left: 0;
+            top: 0;
+            width: 100% !important;
+            opacity: 1.0;
+            background-color: #0000004f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000;
+            gap: 50px;
+            color: white;
+            z-index: 999;
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            border-radius: 15px;
+            height: 500px;
+            max-height: 500px;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+            padding-bottom: 40px !important;
+            position: relative;
+            overflow: clip;
+        }
+
+        .content::before {
+            content: '';
+            background-image: var(--background-image);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+        }
+
+        .top {
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .top {
+                flex-direction: column;
+            }
+
+            .bar {
+                flex-direction: column;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                gap: 15px;
+            }
+        }
+
+        body {
+            font-family: 'Inter';
+        }
+
+        button {
+            font-family: 'Inter';
+            outline: none;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            backdrop-filter: brightness(1.2) contrast(1.5);
+        }
+
+        .main {
+            padding-left: 25px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="bar">
+        <a href="index.html"><img src="/assets/dock/launcher.png" height="20px" width="30px"></a>
+        <a href="pc.html">
+            <p style="padding-left: 5px; color: white;">PC</p>
+        </a>
+        <p>Mobile</p>
+        <p>Entertainment</p>
+        <p>Support</p>
+        <p>Wiki</p>
+    </div>
+    <div class="bar">
+        <img src="/assets/brand/setg.png" style="height: 30px;">
+        <p>Envy Insider Program</p>
+    </div>
+    <div class="main">
+        <h1>This boo does tricks.</h1>
+        <img src="81.png" style="height: 300px; border-radius: 9px;">
+        <h1>And that.</h1>
+    </div>
+</body>
+
+</html>

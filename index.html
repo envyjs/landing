@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter';
+        }
+
+        .bar {
+            /* position: fixed;s */
+            /* height: 50px; */
+            left: 0;
+            top: 0;
+            width: 100% !important;
+            opacity: 1.0;
+            background-color: #0000004f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000;
+            gap: 50px;
+            color: white;
+            z-index: 999;
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            border-radius: 15px;
+            height: 500px;
+            max-height: 500px;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+            padding-bottom: 40px !important;
+            position: relative;
+            overflow: clip;
+        }
+
+        .content::before {
+            content: '';
+            background-image: var(--background-image);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+        }
+
+        .top {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .top {
+                flex-direction: column;
+            }
+
+            .bar {
+                flex-direction: column;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                gap: 15px;
+            }
+        }
+
+        body {
+            font-family: 'Inter';
+        }
+
+        button {
+            font-family: 'Inter';
+            outline: none;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            backdrop-filter: brightness(1.2) contrast(1.5);
+        }
+
+        .main {
+            padding: 20px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="bar">
+        <a href="index.html"><img src="/assets/dock/launcher.png" height="20px" width="30px"></a>
+        <a href="pc.html">
+            <p style="padding-left: 5px; color: white;">PC</p>
+        </a>
+        <p>Mobile</p>
+        <p>Entertainment</p>
+        <p>Support</p>
+        <p>Wiki</p>
+    </div>
+    <div class="main">
+        <div class="top" style="display: flex;">
+            <div class="content"
+                style="--background-image: url('https://envy.js.org/assets/wp.jpg'); background-position: center; padding-bottom: 15px; flex: 1;">
+                <center>
+                    <img src="/assets/brand/setg.png" height="70">
+                    <h1 style="color: white;">Fast and faster.</h1>
+                    <p style="color: white;">Avalible now.</p>
+                    <div style="display: flex; gap: 15px; align-items: center; justify-content: center;">
+                        <button style="border-radius: 90px; height: 40px; width: 100px;">Learn more</button>
+                        <button style="border-radius: 90px; height: 40px; width: 100px;">Try now</button>
+                    </div>
+                </center>
+            </div>
+            <div class="content"
+                style="--background-image: url('https://images.pexels.com/photos/18483100/pexels-photo-18483100/free-photo-of-turquoise-water-surface.jpeg'); background-size: cover; padding-bottom: 15px; flex: 1">
+                <center>
+                    <img src="/assets/brand/setf.png" class="helper" height="70">
+                    <h1 style="color: white;">AI-mpressive.</h1>
+                    <p style="color: white;">Our best AI yet.</p>
+                    <div style="display: flex; gap: 15px; align-items: center; justify-content: center;">
+                        <button style="border-radius: 90px; height: 40px; width: 100px;">Learn more</button>
+                        <button style="border-radius: 90px; height: 40px; width: 170px;">Apply for early access</button>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <br>
+        <div class="content"
+            style="--background-image: url('eo.jpg'); background-position: top; background-size: cover; padding-bottom: 15px;">
+            <center>
+                <img src="/assets/brand/setd.png" class="one" height="60">
+                <h1 style="color: white;">The best of Envy to you.</h1>
+                <p style="color: white;">Always on the air.</p>
+                <button style="border-radius: 90px; height: 40px; width: 100px;">Stream now</button>
+            </center>
+        </div>
+        <br>
+        <div class="content" style="--background-image: url('ea.jpeg'); background-size: cover; padding-bottom: 15px;">
+            <center>
+                <img src="/assets/brand/seta.png" height="70">
+                <h1 style="color: white;">Envy Insider Program</h1>
+                <p style="color: white;">See what we've been working on.</p>
+                <div style="display: flex; gap: 15px; align-items: center; justify-content: center;">
+                    <button style="border-radius: 90px; height: 40px; width: 100px;">Learn more</button>
+                    <button style="border-radius: 90px; height: 40px; width: 130px;">Apply for access</button>
+                </div>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>
