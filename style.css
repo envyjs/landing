@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('./Assets/Inter-Regular.woff2')
+}
+body {
+    background-color: black;
+    font-family: 'Inter';
+    user-select: none;
+}
+button, input {
+    background-color: black;
+    color: white;
+    border: 2px solid gray;
+    height: 40px;
+    min-width: 200px;
+    font: inherit;
+    border-radius: 99px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #5f5f5f;
+}
+#top {
+    height: 45px;
+    background-color: white;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    font-size: 15px;
+    gap: 30px;
+}
+#top a {
+    text-decoration: none;
+    color: black;
+}
+#frontstage {
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    background: #e6e6e6;
+    left: 0;
+    top: 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+#frontstage img {
+    margin-top: 30px;
+    border-radius: 6px;
+}
+#frontstage p {
+    margin-top: -10px;
+}
+#stage {
+    position: absolute;
+    height: 45%;
+    width: 100%;
+    background: #2e2e2e;
+    left: 0;
+    color: white;
+    top: calc(223px + 60%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+#stage img {
+    margin-top: 65px;
+    border-radius: 6px;
+}
+#stage p {
+    margin-top: -10px;
+}
