@@ -82,3 +82,23 @@ button:hover {
 #stage p {
     margin-top: -10px;
 }
+#stage2 {
+    position: absolute;
+    height: 45%;
+    width: 100%;
+    background: linear-gradient(to bottom, #000 0%, #1c184a 100%);
+    left: 0;
+    color: white;
+    top: calc(223px + 108%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+#stage2 img {
+    margin-top: 65px;
+    border-radius: 6px;
+}
+#stage2 p {
+    margin-top: -10px;
+}
