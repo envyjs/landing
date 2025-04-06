@@ -5,26 +5,15 @@
     src: local(''), url('./Assets/Inter-Regular.woff2')
 }
 body {
-    background-color: black;
+    background-color: #f6f6f6;
     font-family: 'Inter';
     user-select: none;
 }
-button, input {
-    background-color: black;
-    color: white;
-    border: 2px solid gray;
-    height: 40px;
-    min-width: 200px;
-    font: inherit;
-    border-radius: 99px;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #5f5f5f;
+button {
+    cursor: pointer;
 }
 #top {
-    height: 45px;
+    height: 60px;
     background-color: white;
     position: fixed;
     z-index: 99999;
@@ -33,72 +22,83 @@ button:hover {
     width: 100%;
     align-items: center;
     align-self: center;
-    justify-content: center;
     justify-items: center;
     display: flex;
     font-size: 15px;
     gap: 30px;
 }
+
+#top .left {
+    margin-left: 30px;
+    gap: 30px;
+    align-items: center;
+    align-self: center;
+    justify-items: center;
+    display: flex;
+    justify-content: left;
+}
+
+#top .main {
+    gap: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    align-items: center;
+    align-self: center;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#top img {
+    padding-top: 3px;
+}
+
+#top button {
+    background: none;
+    border: none;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+#top button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Align with the existing border */
+    width: 0;
+    height: 2px;
+    background-color: black; /* Color when hovered */
+    transition: width 0.2s ease-in-out;
+}
+
+#top button:hover::after {
+    width: 100%;
+}
+#top button img {
+    height: 25px;
+    padding-top: 14px;
+}
 #top a {
     text-decoration: none;
     color: black;
 }
-#frontstage {
+#top input {
+    height: calc(100% - 20px);
+    border: none;
+    background-color: #f6f6f6 !important;
+    width: 250px;
+    padding-left: 60px;
+    border-radius: 4px;
+    background-size: 20px !important;
+    background-repeat: no-repeat !important;
+    background-position: 20px center !important;
+    background: url(./Assets/compass.svg)no-repeat left center;
     position: absolute;
-    height: 75%;
-    width: 100%;
-    background: #e6e6e6;
-    left: 0;
-    top: 45px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 30px;
-}
-#frontstage img {
-    margin-top: 30px;
-    border-radius: 6px;
-}
-#frontstage p {
-    margin-top: -10px;
-}
-#stage {
-    position: absolute;
-    height: 45%;
-    width: 100%;
-    background: #2e2e2e;
-    left: 0;
-    color: white;
-    top: calc(223px + 60%);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 30px;
-}
-#stage img {
-    margin-top: 65px;
-    border-radius: 6px;
-}
-#stage p {
-    margin-top: -10px;
-}
-#stage2 {
-    position: absolute;
-    height: 45%;
-    width: 100%;
-    background: linear-gradient(to bottom, #000 0%, #1c184a 100%);
-    left: 0;
-    color: white;
-    top: calc(223px + 108%);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 30px;
-}
-#stage2 img {
-    margin-top: 65px;
-    border-radius: 6px;
-}
-#stage2 p {
-    margin-top: -10px;
+    right: 30px;
 }

@@ -1,41 +1,57 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Envy</title>
+        <title>Envy - Home</title>
         <link rel="stylesheet" href="style.css">
         <meta charset="utf8" />
-        <meta property="og:title" content="Envy"/>
+        <meta property="og:title" content="Envy - Home"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           property="og:description"
-          content="Envy is what's happening next and now, powered by amazing open source projects."
+          content="The best of Envy, with the best software out there and much more across the whole of Envy."
         />
     </head>
     <body>
         <div id="top">
-            <img src="./favicon.ico">
-            <a href="https://store.envy.ink">Store</a>
-            <a href="index.html">Desktop</a>
-            <a href="index.html">Mobile</a>
-            <a href="index.html">Entertainment</a>
-            <a href="index.html">Support</a>
-        </div>
-        <div id="frontstage">
-            <h1>Envy 10 2025 Update</h1>
-            <p>Faster. Smoother. Stronger.</p>
-            <a href="https://os.envy.ink"><button>Try it now</button></a>
-            <img src="./Assets/frontstage.png" height="500px">
-        </div>
-        <div id="stage">
-            <h1>Envy Snap</h1>
-            <p>Support in a snap.</p>
-            <a href="https://snap.envy.ink"><button>Try it now</button></a>
-            <img src="./Assets/snap.png" height="150px">
-        </div>
-        <div id="stage2">
-            <h1>Envy Search</h1>
-            <p>Search the world.</p>
-            <a href="https://search.envy.ink"><button>Try it now</button></a>
-            <img src="./Assets/globe.png" height="200px">
+            <div class="left">
+                <a href="./auth/">
+            <img src="./Assets/seta.png" height="48px" style="padding-top: 10px;">
+                </a>
+            <a href="./auth/">
+                <button style="width: 200px;">
+                    <img src="./Assets/circle-user-round.svg">
+                    <h3>Sign in</h3>
+                </button>
+            </a>
+            </div>
+            <div class="main">
+
+            <a href="./auth/">
+                <button>
+                    <img src="./Assets/house.svg">
+                    <h3>Home</h3>
+                </button>
+            </a>
+            <a href="https://chalk.envy.ink/">
+                <button>
+                    <img src="./Assets/message-circle.svg">
+                    <h3>Chalk</h3>
+                </button>
+            </a>
+            <a href="https://snap.envy.ink">
+                <button>
+                    <img src="./Assets/snap.png" style="filter: grayscale(1) contrast(0);">
+                    <h3>Snap</h3>
+                </button>
+            </a>
+            <a href="https://snap.envy.ink">
+                <button>
+                    <img src="./Assets/cloud.svg">
+                    <h3>Weather</h3>
+                </button>
+            </a>
+            </div>
+            <input type="text" placeholder="Search Envy and the web">
         </div>
     </body>
 </html>
